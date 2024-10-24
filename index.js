@@ -73,10 +73,3 @@ function init() {
         });
 }
 
-// Function call to initialize app
-function init() {
-    inquirer.prompt(questions)
-        .then((answers) => {
-            writeToFile('README.md', generateMarkdown(answers));
-        });
-}
